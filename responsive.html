@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic+Condensed+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+      }
+      * {
+        font-family: Inter;
+      }
+      .container {
+        padding: 0px 16px;
+      }
+      #hero {
+      }
+      #hero h1 {
+        font-weight: 900;
+        font-size: 2.5rem;
+      }
+      .primary-button {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        height: 52px;
+        display: block;
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: 700px;
+      }
+      .stats-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 10px;
+        width: 135px;
+      }
+      .stats .text {
+        font-size: 12px;
+      }
+      .stats .number {
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .hero-image {
+        width: 100vw;
+      }
+      .hero-image img {
+        width: 100%;
+        height: auto;
+      }
+      @media (min-width: 600px) {
+        .container {
+          padding: 0px 60px;
+        }
+      }
+      @media (min-width: 900px) {
+        #hero {
+          display: flex;
+        }
+        html {
+          font-size: 16px;
+        }
+        .primary-button {
+          width: 200px;
+          background-color: red;
+        }
+      }
+      @media (min-width: 1200px) {
+        .container {
+          padding: 0px 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+        <p>
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your sense of
+          style.
+        </p>
+        <button class="primary-button">Shop Now</button>
+        <div class="stats-container">
+          <div class="stats">
+            <div class="number">200+</div>
+            <div class="text">International Brands</div>
+          </div>
+          <div class="stats">
+            <div class="number">2,000+</div>
+            <div class="text">High-Quality Products</div>
+          </div>
+          <div class="stats">
+            <div class="number">30,000+</div>
+            <div class="text">Happy Customers</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://picsum.photos/600/600" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
